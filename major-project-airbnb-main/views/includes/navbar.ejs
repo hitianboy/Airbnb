@@ -1,0 +1,93 @@
+<style>
+  .search-btn {
+    background-color: #fe424d;
+    color: #fff;
+    border-radius: 25px;
+    padding: 0 1rem;
+  }
+
+  .search-btn:hover {
+    background-color: #fe424d;
+    color: #fff;
+  }
+
+  #abhi {
+    margin-right: 0.5rem;
+  }
+
+  .search-inp {
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    font-size: 1em;
+    width: 200px;
+  }
+
+  /* mobile view me search input thoda chhota ho jaye */
+  @media (max-width: 576px) {
+    .search-inp {
+      width: 120px;
+      font-size: 0.9em;
+    }
+
+    .search-btn {
+      padding: 0.3rem 0.8rem;
+      font-size: 0.9em;
+    }
+  }
+</style>
+
+<nav class="navbar navbar-expand-lg bg-light sticky-top">
+  <div class="container-fluid">
+    <!-- Brand -->
+    <a class="navbar-brand" href="/listings">
+      <i class="fa-regular fa-compass"></i>
+    </a>
+
+    <!-- Toggle btn (hamburger in mobile) -->
+    <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbarNavAltMarkup" 
+      aria-controls="navbarNavAltMarkup" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapse Menu -->
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <!-- Left links -->
+      <div class="navbar-nav">
+        <a class="nav-link" href="/listings">Explore</a> 
+      </div> 
+
+      <!-- Center search bar -->
+      <div class="navbar-nav ms-auto me-auto">
+        <form class="d-flex" role="search">
+          <input 
+            class="form-control search-inp me-2"
+            type="search" 
+            placeholder="Search destination">
+          
+          <button class="btn search-btn" type="submit">
+            <i id="abhi" class="fa-solid fa-magnifying-glass"></i>Search
+          </button>
+        </form>
+      </div>
+
+      <!-- Right side links -->
+  <div class="navbar-nav ms-auto">
+        <a class="nav-link" href="/listings/new">Airbnb your home</a> 
+       
+          <a class="nav-link" href="/signup"><b>Signup</b></a>
+          <a class="nav-link" href="/login"><b>Log in</b></a>
+     
+     
+          <a class="nav-link" href="/logout"><b>Log out</b></a>
+   
+      </div>
+
+    </div>
+  </div>
+</nav>
